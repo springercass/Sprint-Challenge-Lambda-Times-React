@@ -29,9 +29,15 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+      PropTypes are used for checking types of props being passed to components, and defining what types of props each component needs or can pass
 - [ ] Describe a life-cycle event in React?
+      mounting, updating, unmounting- using constructor to mount props -> componentDidMount to setState and data -> rendering components (not sure about unmounting for this life cycle)
 - [ ] Explain the details of a Higher Order Component?
+      a HOC receives a component as an argument and returns a new component, like the authentication from the login page and posts page from insta clone
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+      reactstrap uses prestyled components like buttons, forms, etc.
+      scss or less makes it easier to manage css.
+      styled components creates new const components that take place of ex. <div className="">
 
 ## Project Setup
 
@@ -54,8 +60,8 @@ Follow these steps for completing your project.
 
 ## Minimum Viable Product
 
-- [ ] Go through the `Tabs`, `Tab`, `Cards`, and `Card` components following the instructions, and passing data and props to get the tabs and cards to appear on the screen.
-- [ ] Once the Tabs and Cards are rendering to the screen complete the `changeSelected` and `filterCards` functions in the `Content` component.
+- [x] Go through the `Tabs`, `Tab`, `Cards`, and `Card` components following the instructions, and passing data and props to get the tabs and cards to appear on the screen.
+- [x] Once the Tabs and Cards are rendering to the screen complete the `changeSelected` and `filterCards` functions in the `Content` component.
 - [ ] You should now be able to filter cards using your tabs!
 - [ ] Make sure all of your props being passed are validated using PropTypes.
 - [ ] Find the `TopBar` and `Header` components. Convert these two components to Styled Components. You should not have any `className` props when you are finished.
