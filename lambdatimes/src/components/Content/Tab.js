@@ -2,15 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Tab = props => {
-  let cn = "";
+  let tab = "";
   if (props.tab === props.selectedTab) {
-    cn = "tab active-tab";
+    tab = "tab active-tab";
   } else {
-    cn = "tab";
+    tab = "tab";
   }
   return (
     <div
-      className={"cn"}
+      className={"tab"}
       onClick={() => {
         const selectedTab = props.tab;
         props.selectTabHandler(selectedTab);
