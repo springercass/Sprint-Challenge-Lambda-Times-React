@@ -29,9 +29,9 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
-      PropTypes are used for checking types of props being passed to components, and defining what types of props each component needs or can pass
+      PropTypes are used for checking types of props being passed to components, and defining what types of props each component needs or can pass. proptypes can show what props are required for a child component to function, to see what kind of data is assigned to each prop, ex. string, number, etc,
 - [ ] Describe a life-cycle event in React?
-      mounting, updating, unmounting- using constructor to mount props -> componentDidMount to setState and data -> rendering components (not sure about unmounting for this life cycle)
+      mounting, updating, unmounting- in the mounting phase, components are being built. initial data is being established and defined in the constructor of the component. render is being used. (componentDidMount, constructor, render) in the updating phase, setState is used to change the state's data and use render to update. in the content section of our app, we are using setState to update the state and data of the tab that is selected and render that to the app. i am not sure of exaclty how unmounting would be used in our app today, but unmounting is when a component is removed from the screen. componentWillUnmount
 - [ ] Explain the details of a Higher Order Component?
       a HOC receives a component as an argument and returns a new component, like the authentication from the login page and posts page from insta clone
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
@@ -64,7 +64,7 @@ Follow these steps for completing your project.
 - [x] Once the Tabs and Cards are rendering to the screen complete the `changeSelected` and `filterCards` functions in the `Content` component.
 - [x] You should now be able to filter cards using your tabs!
 - [x] Make sure all of your props being passed are validated using PropTypes.
-- [ ] Find the `TopBar` and `Header` components. Convert these two components to Styled Components. You should not have any `className` props when you are finished.
+- [x] Find the `TopBar` and `Header` components. Convert these two components to Styled Components. You should not have any `className` props when you are finished.
 
 ## Stretch Challenge
 
